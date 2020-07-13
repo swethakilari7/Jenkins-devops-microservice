@@ -15,6 +15,7 @@ pipeline {
 		dockerHome = tool 'MyDocker'
 		mavenHome = tool 'myMaven'  //Get this information from Global tool configuration...
 		PATH  = "$dockerHome/bin:$mavenHome/bin:$PATH"
+	}
 	stages{
 		stage('Build') {
 			steps {
